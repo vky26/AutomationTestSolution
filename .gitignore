@@ -22,6 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+*/target/**
 */target/*.jar
 */target/classes
 */target/test-classes
@@ -29,3 +30,6 @@ hs_err_pid*
 */target/maven-archiver
 */target/maven-status
 */target/surefire-reports
+
+*/.settings
+*/.classpath
