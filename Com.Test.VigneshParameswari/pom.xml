@@ -12,7 +12,7 @@
 	</properties>
 	<profiles>
 		<profile>
-			<!-- Prod Environment - Set to Active -->
+			<!-- Prod Environment - Set this to Active -->
 			<id>prod</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
