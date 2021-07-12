@@ -1,0 +1,8 @@
+{
+	"defaultproperties":{
+		"url":"testurlbase64encodedurl",
+		"userName":"testenvusernameencoded",
+		"passWord":"testenvpassencoded",
+		"paymentType":"Pay by Cheque"
+	}
+}
