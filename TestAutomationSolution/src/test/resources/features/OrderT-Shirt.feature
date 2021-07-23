@@ -18,4 +18,3 @@ Feature: Order T-Shirt
   Scenario: Launch and Close browser demo
     Given I login to the google site
     Then I close the browser
-    

@@ -38,6 +38,14 @@ public abstract class AbstractPage {
 		}
 		driver = scenarioContext.getDriver();
 	}
+	
+	//Driver Initialisation for Mobile,  param to differentiate 
+	public AbstractPage(ScenarioContext scenarioContext, String mobileVersion) {
+		if (System.getProperty("driverWaitTime") != null) {
+			driverWaitTime = Integer.valueOf(System.getProperty("driverWaitTime"));
+		}
+		driver = scenarioContext.getMobileDriver();
+	}
 
 	/**
 	 * <h1>webClickElement</h1>

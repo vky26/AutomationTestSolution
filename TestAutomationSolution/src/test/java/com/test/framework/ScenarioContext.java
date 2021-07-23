@@ -81,6 +81,13 @@ public class ScenarioContext {
 		}
 		return driver;
 	}
+	
+	public RemoteWebDriver getMobileDriver() {
+		if (null == driver) {
+			driver = initDriver.makeMobDriver("android");//configure it later for iOS
+		}
+		return driver;
+	}
 
 	/**
 	 * <h1>quitDriver</h1>

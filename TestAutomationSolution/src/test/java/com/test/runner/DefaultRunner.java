@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
  * @since 2021-03-24
  */
 
-@CucumberOptions(tags = "@demo", glue = { "com.test.stepdefs" }, plugin = {"json:target/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, features = { "src/test/resources/features/" })
+@CucumberOptions(tags = "@demoAndroid", glue = { "com.test.stepdefs" }, plugin = {"json:target/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, features = { "src/test/resources/features/" })
 public class DefaultRunner extends AbstractTestNGCucumberTests {
 	@Override
 	@DataProvider(parallel = true)
