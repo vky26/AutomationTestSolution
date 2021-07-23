@@ -61,7 +61,7 @@ public class LoginPage extends AbstractPage {
 		 webSendKeys(passWord, sc.decodedString(sc.readJsonData("defaultproperties", "passWord")));
 		 webClickElement(signInButton);
 		 
-		 takeWebScreenShot(sc,"Login to application is successful");
+		 takeScreenShot(sc,"Login to application is successful");
 		 return true;
 	}
 	
@@ -74,7 +74,7 @@ public class LoginPage extends AbstractPage {
 			e.printStackTrace();
 		}
 		 
-		 takeWebScreenShot(sc,"Launched to application is successful");
+		 takeScreenShot(sc,"Launched to application is successful");
 		 return true;
 	}
 	
