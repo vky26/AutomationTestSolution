@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.appium.java_client.android.AndroidDriver;
+
 /**
  * <h1>AbstractPage</h1> The AbstractPage class implements all the reusable
  * methods that are needed for the Web App Automation for our scenarios. 
@@ -45,6 +47,7 @@ public abstract class AbstractPage {
 			driverWaitTime = Integer.valueOf(System.getProperty("driverWaitTime"));
 		}
 		driver = scenarioContext.getMobileDriver();
+
 	}
 
 	/**
@@ -223,7 +226,7 @@ public abstract class AbstractPage {
 	 * <h1>takeWebScreenShot</h1>
 	 * This takeWebScreenShot method Take screenshot for web app
 	 */
-	public boolean takeWebScreenShot(ScenarioContext sc, String content) {
+	public boolean takeScreenShot(ScenarioContext sc, String content) {
 		final byte[] screenshot = driver.getScreenshotAs(OutputType.BYTES);
 		sc.getScenario().attach(screenshot, "image/png", content);
 		return true;

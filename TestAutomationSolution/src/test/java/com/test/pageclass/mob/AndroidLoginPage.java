@@ -39,6 +39,7 @@ public class AndroidLoginPage extends AbstractPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		 takeScreenShot(sc,"App launched successfully");
 		 return true;
 	}
 	
