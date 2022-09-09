@@ -107,7 +107,7 @@ public class PersonalInfoPage extends AbstractPage {
 		}
 		
 		sc.getScenario().attach("First Name has been updated successfully and its  verified in Header & Personal Information Screen", "text/plain", "First Name has been updated successfully and its  verified in Header & Personal Information Screen");
-		takeWebScreenShot(sc, "First Name has been updated successfully and its  verified in Header & Personal Information Screen");
+		takeScreenShot(sc, "First Name has been updated successfully and its  verified in Header & Personal Information Screen");
 		 
 		return true;
 	

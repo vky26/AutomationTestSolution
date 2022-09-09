@@ -83,6 +83,7 @@ public class ScenarioContext {
 	}
 	
 	public RemoteWebDriver getMobileDriver() {
+		System.out.println("Initialise Android Driver");
 		if (null == driver) {
 			driver = initDriver.makeMobDriver("android");//configure it later for iOS
 		}

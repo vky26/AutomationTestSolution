@@ -151,7 +151,7 @@ public class OrderTShirtPage extends AbstractPage {
 		validateOrderSummaryScreen();//order summary page
 		
 		sc.getScenario().attach("Test Data used is: Product name " + sc.getProductName() + " and the quantity is " + sc.getOrderQuantity(), "text/plain", "Test Data used for Order TShirt Scenario");
-		takeWebScreenShot(sc, "Placed Order is successfully");
+		takeScreenShot(sc, "Placed Order is successfully");
 		return true;
 	}
 
@@ -178,7 +178,7 @@ public class OrderTShirtPage extends AbstractPage {
 		
 		webClickElement(addToCart);
 		
-		takeWebScreenShot(sc, "Product has been added to Cart Successfully");
+		takeScreenShot(sc, "Product has been added to Cart Successfully");
 	}
 
 	// TODO Auto-generated method stub
@@ -214,7 +214,7 @@ public class OrderTShirtPage extends AbstractPage {
 		sc.setOrderPrice(webGetText(productTotalAmountSummaryScreen));
 		LOG.info("Product Price has been set in context");
 		
-		takeWebScreenShot(sc, "Order Summary Screen Validation is successfully");
+		takeScreenShot(sc, "Order Summary Screen Validation is successfully");
 		
 	}
 	
@@ -232,7 +232,7 @@ public class OrderTShirtPage extends AbstractPage {
 		validateList(addressCountry,sc.readJsonData("addressDetails", "addCountry"));
 		validateList(addressPhoneNumber,sc.readJsonData("addressDetails", "phoneNumber"));
 		
-		takeWebScreenShot(sc, "Validation of Address Screen is successfully");
+		takeScreenShot(sc, "Validation of Address Screen is successfully");
 		
 	}
 	
@@ -252,8 +252,8 @@ public class OrderTShirtPage extends AbstractPage {
 	private void validateShippingScreen() {
 		sc.setDeliveryFee(webGetText(deliveryFee));
 		jsClickWithoutWait(agreeCheckBox);
-		
-		takeWebScreenShot(sc, "Validation of Shipping Screen is successfully");
+
+		takeScreenShot(sc, "Validation of Shipping Screen is successfully");
 	}
 	
 	private void validatePaymentScreen() {
@@ -300,8 +300,7 @@ public class OrderTShirtPage extends AbstractPage {
 		webClickElement("//p[@class='payment_module']/a[@title='"+ sc.readJsonData("defaultproperties", "paymentType") +"']");//Get Payment Type from Config file
 		Assert.assertTrue(webIsElementVisible(confirmPayByBankWireType),"Bank Wire Payment Type has been selected");
 		
-		takeWebScreenShot(sc, "Validation of Payment Screen is successful and the total amount is " + totalPaymentAmount);
-		
+		takeScreenShot(sc, "Validation of Payment Screen is successful and the total amount is " + totalPaymentAmount);
 	}
 
 	
@@ -470,7 +469,7 @@ public class OrderTShirtPage extends AbstractPage {
 		}
 		
 		LOG.info("Order History Details Page has verified successfully");
-		takeWebScreenShot(sc, "Order History Details Page has verified successfully");
+		takeScreenShot(sc, "Order History Details Page has verified successfully");
 		
 	}
 

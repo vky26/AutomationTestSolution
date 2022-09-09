@@ -52,12 +52,13 @@ public class InitDriver {
             	File appDir = new File("src/test/resources/apps");
                 File app = new File(appDir, "ApiDemosdebug.apk"); //Android Dummy APK
             	DesiredCapabilities capabilities = new DesiredCapabilities();
-            	capabilities.setCapability("DEVICE_NAME", "emulator-5554");
+            	capabilities.setCapability("DEVICE_NAME", "AndroidDevice");
             	capabilities.setCapability("VERSION", "10"); 
             	capabilities.setCapability("platformName","Android");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("automationName","uiautomator2");
 				try {
+				    //start appium session manually and open the avd from android studio
 					driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 				} catch (MalformedURLException e) {
 					// TODO Auto-generated catch block
