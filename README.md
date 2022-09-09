@@ -68,4 +68,9 @@ What "src/test/resouces" got
         - chromedriver and firefox driver (geckodriver) has been preloaded in framework for mac OS
 
 
+Added Features for Mobile
+Pre-requisite:
+  # 1. Start the appium session manually
+  # 2. Setup and avd from android studio and configure the device details in InitDriver class
+
 # That's it! Happy Testing
