@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -229,6 +230,25 @@ public abstract class AbstractPage {
 	public boolean takeScreenShot(ScenarioContext sc, String content) {
 		final byte[] screenshot = driver.getScreenshotAs(OutputType.BYTES);
 		sc.getScenario().attach(screenshot, "image/png", content);
+		return true;
+	}
+
+	/**
+	 * <h1>switchToIFrame</h1>
+	 * This method accepts iframe id
+	 */
+	public boolean switchToIFrame(String ele) {
+		driver.switchTo().frame(ele); //switch to frame
+		return true;
+	}
+
+	/**
+	 * <h1>selectDropDownByName</h1>
+	 * This method selects a value by name from dropdown field
+	 */
+	public boolean selectDropDownByName(String dropDownName,String dropDownValue) {
+		Select drpCountry = new Select(driver.findElement(By.name(dropDownName)));
+		drpCountry.selectByVisibleText(dropDownValue);
 		return true;
 	}
 
