@@ -145,7 +145,14 @@ public abstract class AbstractPage {
 	 * Accepts WebElement 
 	 */
 	public boolean webIsElementVisible(WebElement ele) {
-		return ele.isDisplayed();
+		try{
+			if(ele.isDisplayed()){
+				return true;
+			}
+		}catch(Exception e){
+			return false;
+		}
+		return true;
 	}
 	
 	/**
@@ -155,7 +162,14 @@ public abstract class AbstractPage {
 	 * Accepts String locator
 	 */
 	public boolean webIsElementVisible(String ele) {
-		return driver.findElement(By.xpath(ele)).isDisplayed();
+		try{
+			if(driver.findElement(By.xpath(ele)).isDisplayed()){
+				return true;
+			}
+		}catch(Exception e){
+			return false;
+		}
+		return true;
 	}
 	
 
