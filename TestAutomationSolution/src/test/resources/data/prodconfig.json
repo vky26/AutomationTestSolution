@@ -4,7 +4,15 @@
 		"userName":"dmt5MjY4OEBnbWFpbC5jb20=",
 		"passWord":"VGVzdFBhc3MxMg==",
 		"paymentType":"Pay by bank wire",
-		"newPassWord":"VGVzdFBhc3MxMg=="
+		"newPassWord":"VGVzdFBhc3MxMg==",
+		"hotelBookingURL":"aHR0cHM6Ly93d3cuY2xvY2stc29mdHdhcmUuY29tL2RlbW8tY2xvY2twbXMvaW5kZXguaHRtbA==",
+		"emailID": "dummy@gail.com",
+		"lastName": "Kholi",
+		"firstName": "Virat",
+		"phoneNumber": "0789654321",
+		"numberOfNights": "4",
+		"numberOfAdults": "2",
+		"numberOfChild": "0"
 	},
 	
 	"addressDetails":{
@@ -13,6 +21,22 @@
 		"addCity":"Dallas, Ohio 43015",
 		"addCountry":"United States",
 		"phoneNumber": "+447448472089"
+	},
+
+	"creditCardDetails": {
+		"number": "NDkyOSAwMDAwIDAwMDAgNg==",
+		"brand": "VklTQQ==",
+		"expiryMonth": "MDU=",
+		"expiryYear": "MjAyNQ=="
+	},
+
+	"billingAddressDetails":{
+		"addLine":"10 Park Hill Bvld",
+		"zip":"43015",
+		"city":"London",
+		"state":"Sussex",
+		"country": "United Kingdom"
 	}
+
 
 }

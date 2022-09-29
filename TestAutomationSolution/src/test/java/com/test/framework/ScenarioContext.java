@@ -323,8 +323,8 @@ public class ScenarioContext {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		Calendar cal = Calendar.getInstance();
 		Random r = new Random();
-		int low = 50;
-		int high = 100;
+		int low = 60;
+		int high = 200;
 		int result = r.nextInt(high-low) + low;
 		cal.add(Calendar.DAY_OF_MONTH, result);
 		return sdf.format(cal.getTime());
