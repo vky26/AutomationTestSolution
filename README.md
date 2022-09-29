@@ -43,6 +43,8 @@ The solution itself is a maven project, all the dependencies are configured in p
 # Update Personal Information Scenario Report Snapshot
 ![PersonalInformationScenarioReport](https://user-images.githubusercontent.com/30401839/112394593-eb265980-8cf4-11eb-97c7-b966c0d6e888.png)
 
+# Extend Execution Reports Path
+Reports/Execution dd-mmm-yyyy/Reports/reports.html
 
 # Framework Structure OverView:
 <img width="376" alt="Project Structure" src="https://user-images.githubusercontent.com/30401839/112395035-93d4b900-8cf5-11eb-9319-423fc51c8c33.png">
@@ -74,3 +76,5 @@ Pre-requisite:
   # 2. Setup and avd from android studio and configure the device details in InitDriver class
 
 # That's it! Happy Testing
+
+
